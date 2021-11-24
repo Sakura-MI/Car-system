@@ -1,0 +1,122 @@
+.img{
+  display: inline-block;
+}
+
+.line{
+  display: flex;
+  margin: -15px auto;
+  height: 1px;
+  margin-left: 80px;
+  /* margin-right: 50px; */
+  background-color: #D8D8D8;
+}
+.line1{
+  display: flex;
+  margin: -15px auto;
+  height: 1px;
+  margin-left: 120px;
+  /* margin-right: 50px; */
+  background-color: #D8D8D8;
+}
+
+
+
+
+.pic {
+float:left;
+position:relative;
+margin-right:9px;
+margin-bottom:9px;
+}
+ 
+.delete-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ 
+.container-car{
+  border: 1px solid transparent;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-radius: 30rpx;
+  /* text-align: center; */
+}
+.icon:before {
+  content: '* ';
+  color: red;
+ 
+}
+
+.icon{
+  line-height:50px;
+  font-size: 19px;
+  font-weight: 550;
+  font-family:  Microsoft JhengHei;
+  color:rgb(100, 92, 92);
+  
+  margin-bottom: 25px;
+}
+
+
+.weui-uploader{
+  width: 160px;
+  padding: 10rpx;
+  margin:0 auto;
+}
+ 
+ 
+.lineHeight {
+  text-align: center;
+  width: 100%;
+  line-height: 80rpx;
+  /* border-bottom: 1px solid #ccc; */
+  /* font-size: 30rpx; */
+}
+
+.numberInfo {
+  margin-top: 150rpx;
+  text-align: center;
+  font-size: 50rpx;
+  text-indent: 15rpx;
+  margin-bottom: 50rpx;
+}
+ 
+.input {
+  display: inline-block;
+  border: 1px solid #ccc;
+  line-height: 80rpx;
+  vertical-align: middle;
+  width: auto;
+  padding: 15rpx;
+  border-radius: 20rpx;
+}
+
+ 
+button {
+  width: 100%;
+  margin-top: 30rpx;
+}
+.select{
+  margin-left: 7%;
+  color: #666;
+}
+ 
+.input-15{
+  margin-left:15%;
+}
+
+.bind-btn {
+  background-color: #4791c2;
+  color: #fff;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+

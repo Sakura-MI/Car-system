@@ -1,0 +1,12 @@
+<!--component/navBar/navBar.wxml-->
+<view class='topbar'>
+  <view class='status' style="height:{{statusHeight}}px"></view>
+  <view class='navbar' style="height:{{navHeight}}px">
+    <view class='navbar_back' bindtap='backClick'>
+      <image mode="widthFix" src="../../images/back.png"></image>
+    </view>
+    <view class='navbar_title' style="height:{{navHeight}}px">
+      <view >{{title}}</view>
+    </view>
+  </view>
+</view>

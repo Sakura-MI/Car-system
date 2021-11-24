@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "popup": "../../component/popup/popup",
+    "prompt":"/component/prompt/prompt" 
+  
+  }
+}

@@ -1,0 +1,13 @@
+<!--component/chargeCard/chargeCard.wxml-->
+<view class='charge' bindtap='goSearch'>
+	  <text class='where'>{{buildNum}}</text>
+		<view class="box1">
+			<view class="box">{{num}} 空闲</view>
+			{{socketNum}}插座
+		</view>
+		<view class="which">{{powerNum}}号电站 </view> 
+		<view class='detail' bindtap="bindEjectComponent">查看详情
+			<image class='btn' src="../../images/detial.png"></image>
+		</view>
+		<prompt txtTips="{{txtTips}}" bind:events="bindPromptConfirm" wx:if="{{isShowPromptComponent}}"/>
+</view>

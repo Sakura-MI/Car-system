@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "我的车库",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "nav-bar":"/component/navBar/navBar"
+  }
+}

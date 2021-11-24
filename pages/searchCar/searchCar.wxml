@@ -1,0 +1,20 @@
+<!--pages/searchCar/searchCar.wxml-->
+<nav-bar header='{{header}}' title='寻找车主'></nav-bar>
+<view class="car">请输入车牌号查询车主:</view>
+<searchbar
+  placeholder="查询"
+  bind:handleSearch="handleSearch" 
+></searchbar>
+
+<view class="firend-con" wx:if="{{id != 0}}">
+<view class='giftListView'>
+ <block >
+    <image class='iconImage' src="{{avatar}}" mode = 'aspectFit'></image>
+    <text class='productNameText'>{{user_name}}</text>
+   <view class='needScoreView'>
+    <navigator  url="/pages/message/chat/chat?detail={{id }}" redirect>
+    <button data-id="{{ id }}" bindtap="Community" class='needSocreText'>与他聊天</button> </navigator>
+   </view>
+ </block>
+</view>
+</view>

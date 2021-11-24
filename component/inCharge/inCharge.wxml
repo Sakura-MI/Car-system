@@ -1,0 +1,17 @@
+<!--component/inCharge/inCharge.wxml-->
+
+<view class="charge-main">
+
+<view  class="charge-content" >
+  
+  <text class='where'>{{buildNum}}</text>
+  <view class="box1">
+			<view class="box">{{num}} 空闲</view>
+			{{socketNum}}插座
+		</view>
+    <view class='detail' bindtap="bindEjectComponent">查看详情
+			<image class='btn' src="../../images/detial.png"></image>
+		</view>
+
+</view>
+</view>

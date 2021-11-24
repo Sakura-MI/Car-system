@@ -1,0 +1,58 @@
+/* component/navBar/navBar.wxss */
+.topbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.status {
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.navbar_back {
+  padding: 0 32rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: auto;
+  
+}
+
+.navbar_back image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.navbar_title {
+  position: absolute;
+  left: 70rpx;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: -1;
+}
+.navbar_title view {
+  width: 40%;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 38rpx;
+  font-family:  Microsoft JhengHei;
+  color:#353535;
+  font-weight: 550;
+  margin-left: 8px;
+}
+

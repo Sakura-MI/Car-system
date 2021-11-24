@@ -1,0 +1,101 @@
+<wxs module="dateUtil" src="../../utils/DataTime.wxs"></wxs>
+
+<view class='header'>消息</view>  <!--标题-->
+<view class="line"></view>    <!--横线标签-->
+
+<import src="../common/item.wxml" />
+<view class="vi">
+
+  <view class="wrapper" style="margin-top: 80px;"> 
+	<!-- 顶部导航 begin -->
+	 <include src="../common/header.wxml" /> 
+	<!-- 顶部导航 end -->
+
+	<view class="nav-scroll" >
+		<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%;">
+			<text wx:for="{{section}}" wx:key="id" id="{{item.id}}" catchtap="handleTap"
+            class="nav-name {{item.id == currentId ? 'nav-hover' : ''}}"
+            style=" font-size:17px;font-weight:550;color:#535050;padding-right: 30rpx;padding-left: 60rpx">{{item.name}}</text>
+		</scroll-view>
+	</view>
+  </view>
+
+<!--聊天模块start-->
+<block wx:if="{{currentId == 1001}}" >
+  <view class="msg-list-vew" style="margin-top: 12px;">
+    
+    <navigator url="/pages/SystemInfo/SystemInfo" >
+    <view class="item1">
+      <image class="avatar" src="/images/icon/comment_mention_icon_show.png"></image>
+      <view class="msg">
+        <view class="row">
+          <view class="title">系统消息</view>
+          <view class="date">{{normalDataTime}}</view>
+        </view>
+        <view class="summary">您有新的系统消息了噢~</view>
+      </view>
+    </view>
+  </navigator>
+  <wxs module="m1">
+function format(ts) {
+	var d = getDate(ts*1000)
+	return [d.getFullYear(), d.getMonth()+1, d.getDate()].join('-')
+		+ ' '
+		+ [d.getHours(), d.getMinutes(), d.getSeconds()].join(':')
+}
+module.exports.format = format
+</wxs>
+  <block wx:for="{{ messages }}" >
+    <navigator hover-class="none" url="/pages/message/chat/chat"  >
+      <view class="item1" >
+        <image class="avatar" src="{{ item.avatar_url }}">
+        </image>
+        <view class="msg">
+          <view class="row">
+            <view class="title">{{ item.user_name }}</view>
+            <!-- <view class="date">{{ m1.format(item.msg.StartTime) }}</view> -->
+            <view class="date">      {{ dateUtil.dateFormat(item.msg.StartTime) }}</view>
+      
+          </view>
+          <view class="summary">{{ item.msg.Content }}</view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
+</block>
+<!-- 聊天end -->
+
+
+<!-- 好友模块 begin -->
+<block wx:if="{{currentId == 1002}}" >
+  <view class="firend-con">
+<view class='giftListView'>
+ <block wx:for="{{ friendlist }}">
+  <view class='item' wx:key="{{item.id}}">
+   <view class='iconImageView' bindtap="showDetailInfo" data-id="{{ item.id }}">
+    <image class='iconImage' src="{{item.user_avatar}}" mode = 'aspectFit'></image>
+   </view>
+   <view class='productNameView'>
+    <text class='productNameText'>{{item.user_name}}</text>
+   </view>
+   <view class='needScoreView'>
+    <button data-id="{{ item.id }}" bindtap="NoFriendMore" class='needSocreText'>不再关注</button> 
+   </view>
+   <view class='productDesView'>
+    <text class = 'productDesText'>来康康我吧</text>
+    <text class = 'productDesText'>我超甜哒~</text>
+   </view>
+  </view>
+ </block>
+</view>
+</view>
+   
+</block>
+<!-- 好友模块 end -->
+
+
+
+
+</view> 
+

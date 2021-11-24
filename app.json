@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/join/join",
+    "pages/pageopen/pageopen",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/social/social",
+    "pages/test/test",
+    "pages/message/message",
+    "pages/message/chat/chat",
+    "pages/bindPhone/bindPhone",
+    "pages/publish/publish",
+    "pages/publishSuccess/publishSuccess",
+    "pages/car/car",
+    "pages/bindCar/bindCar",
+    "pages/newsDetail/newsDetail",
+    "pages/friends/friends",
+    "pages/friendInfo/friendInfo",
+    "pages/SystemInfo/SystemInfo",
+    "pages/reports/reports",
+    "pages/incharge/incharge",
+    "pages/searchCar/searchCar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "车辆联络平台",
+    "navigationStyle": "custom"
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#282828",
+    "selectedColor": "#E31436",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "充电",
+        "iconPath": "images/tab/home.png",
+        "selectedIconPath": "images/tab/home_select.png"
+      },
+      {
+        "pagePath": "pages/social/social",
+        "text": "社区",
+        "iconPath": "images/tab/find.png",
+        "selectedIconPath": "images/tab/find_selected.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/tab/message.png",
+        "selectedIconPath": "images/tab/message_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人",
+        "iconPath": "images/tab/person.png",
+        "selectedIconPath": "images/tab/person_selected.png"
+      }
+    ]
+  }
+}

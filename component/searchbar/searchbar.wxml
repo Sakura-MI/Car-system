@@ -1,0 +1,25 @@
+<!--component/searchbar/searchbar.wxml-->
+<view class="searchbar">
+  <view class="content">
+    <image src="/images/search_icon.png" class="search-icon"></image>
+    <input 
+      bindinput="handleInput"
+      bindconfirm="handleConfirm"
+      type="text"
+      value="{{inputValue}}" 
+      placeholder="{{placeholder}}" 
+      class="input"
+      confirm-type="search"
+    ></input>
+    <image
+     wx:if="{{inputValue}}" 
+     bindtap="handleDeleteClick"
+     src="/images/cancel.png" 
+     class="delete-icon"
+    ></image>
+  </view>
+ 
+  <image class='choose-icon' src="/images/choose.png"></image>
+  <text class='choose'>筛选</text>
+  
+</view>

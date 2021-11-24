@@ -1,0 +1,180 @@
+<view class='header'>个人中心</view>  <!--标题-->
+<view class="line"></view>    <!--横线标签-->
+
+<view class="box" >
+	<view class='head'>
+		<!-- <image class='headphoto'></image> -->
+		<view class='photobg'>
+			<image class='camera' src='{{ avatar }}'></image> 
+			<!-- <image class='camera' src='../../images/user/car.png'></image> -->
+			
+			<view class="usr">
+				<view class="user_name">{{name}}</view> 
+				<!-- <view class="user_car"> {{car_color}} {{carNum}}</view> -->
+					 <view class="user_car"> 白色 福州仓山86E87</view> 
+			</view>
+		</view>
+	</view>
+
+
+	<view class="box1">
+	  <!--车辆绑定-->
+		<view class="box2" >
+			<navigator url="../../pages/car/car"  class="nav">
+        <image class='img' src="../../images/bind_icon.png"></image>
+    	</navigator>	
+			<text class="txt">车辆绑定</text>
+		</view>	
+
+		<!--查找车辆-->
+		<view class="box2">
+			<navigator  class="nav" url="../../pages/searchCar/searchCar">
+        <image class='img' src="../../images/friend_icon.png"></image>
+			</navigator>	
+			<text class="txt">查找车辆</text>
+		</view>	
+
+		<!--车辆定位-->
+		<view class="box2">
+			<navigator   class="nav">
+        <image class='img' src="../../images/location_icon.png"></image>
+    	</navigator>	
+			<text class="txt">车辆定位</text>
+		</view>	
+	
+		<!--个人信息-->
+		<view class="box2">
+			<navigator url="../../pages/bindPhone/bindPhone" class="nav" >
+        <image class='img' src="../../images/person_icon.png"></image>
+    	</navigator>	
+			<text class="txt">个人信息</text>
+		</view>	
+	</view>
+
+	<view class="box3">
+		<text class="txt1">我的贴子</text>
+
+		<!--发布贴子-->
+		<view class="box4">
+			<image class='img1' src='../../images/comment_icon.png'></image>
+			<navigator style="width: 100%;height: 28px;margin-top: 18px;" url="../../pages/publish/publish" > <view class="box5">发布心情</view>
+			<image src="/../../images/iconsmall.png" style="display: inline-block;width: 14px;height: 14px;margin-left:175px ;"></image></navigator>
+		</view>
+		
+		<!--发布的贴子-->
+		<view class="box4">
+			<image class='img1' src='../../images/release_icon.png'></image>
+			<navigator style="width: 100%;height: 28px;margin-top: 18px;"  url="../../pages/social/social" open-type="switchTab"> 
+				<view class="box5">发布的贴子</view>
+				<image src="/../../images/iconsmall.png" class='img11'></image>
+			</navigator>
+		</view>
+
+		
+		
+
+		<!--浏览历史-->
+		<view class="box4">
+			<image class='img1' src='../../images/history_icon.png'></image>
+			<navigator style="width: 100%;height: 28px;margin-top: 18px;" url="../../pages/SystemInfo/SystemInfo" > <view class="box5">系统通知</view>
+			<image src="/../../images/iconsmall.png" style="display: inline-block;width: 14px;height: 14px;margin-left:175px ;"></image></navigator>
+		</view>
+	</view>
+
+	<view class="box6">
+		<text class="txt1">更多服务</text>
+
+		<!--活动通知-->
+		<view class="box4">
+			<image class='img1' src='../../images/activity_icon.png'></image>
+			<navigator style="width: 100%;height: 28px;margin-top: 18px;"  url="../../pages/join/join"> 
+				<view class="box5">加入我们</view>
+				<image src="/../../images/iconsmall.png" style="display: inline-block;width: 14px;height: 14px;margin-left:175px ;"></image>
+			</navigator>
+		</view>
+
+		<!--问题反馈-->
+		<view class="box4">
+			<image class='img1' src='../../images/problem_icon.png'></image>
+			<navigator style="width: 100%;height: 28px;margin-top: 18px;" url="../../pages/reports/reports" > <view class="box5">问题反馈</view>
+			<image src="/../../images/iconsmall.png" style="display: inline-block;width: 14px;height: 14px;margin-left:175px ;"></image></navigator>
+		</view>
+	</view>
+
+	
+</view>
+
+<!--基本信息盒模型  
+<view class='basic'>
+	<text class='basictext'>基本信息</text>
+	<!--名字部分  
+	<view class='namebox'>
+		<!-- <view class="name-icon-box"> 
+		<image class='nameicon-left' src='/images/user/me.png'></image>
+		<text class='name'>名字</text>
+		<!-- </view> 
+		<image class='nameicon' src='/images/righticon.png'></image>
+		<text class='nametext'>{{ name }}</text>
+	</view>
+	<!-- 手机号部分 
+	<view class='namebox' bindtap="toBindPhone">
+		<image class='nameicon-left' src='/images/user/phone.png'></image>
+		<text class='name'>手机号</text>
+		<image class='nameicon' src='/images/righticon.png'></image>
+		<view placeholder-class='textcolor' class='nametext' type='number'> {{ phone }} </view>
+	</view>
+	<!-- 邮箱号 
+	<view class='namebox'>
+		<view class="btn" plain="true" bindtap="powerDrawer" data-statu="open"></view>
+		<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+		<image class='nameicon-left' src='/images/user/email.png'></image>
+		<text class='name'>邮箱号</text>
+		<image class='nameicon' src='/images/righticon.png'></image>
+		<view placeholder-class='textcolor' class='nametext'>{{ email }}</view>
+		<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+			<form bindsubmit='formSubmit'>
+				<view class="drawer_title" wx:if="{{ email=='' }}">绑定邮箱</view>
+				<view class="drawer_title" wx:elif="{{ email !='' }}">解绑邮箱</view>
+				<view class="drawer_content">
+					<view class="top grid">
+						<label class="title col-0">邮箱</label>
+						<input bindinput="watchEmail" wx:if="{{ email=='' }}" class="input_base input_h30 col-1" name="rName" placeholder="请输入邮箱"></input>
+						<view wx:elif="{{ email !='' }}" class="input_base input_h30 col-1" name="rName">{{ email }}</view>
+					</view>
+				</view>
+				<view class="btn_ok" wx:if="{{ email=='' }}" form-type='submit' bindtap="bindEmail" data-statu="close">绑定</view>
+				<view class="btn_ok" wx:elif="{{ email !='' }}" form-type='submit' bindtap="nobindEmail" data-statu="close">解绑</view>
+			</form>
+		</view>
+	</view>
+	<!-- 亲友数  
+	<view class='namebox'>
+		<image class='nameicon-left' src='/images/user/relative.png'></image>
+		<text class='name'>亲友数</text>
+		<image class='nameicon' src='/images/righticon.png'></image>
+		<view placeholder-class='textcolor' class='nametext' type='number'>2</view>
+	</view>
+
+	<!-- 车辆  
+	<navigator url="/pages/car/car?detail={{ MyID }}">
+	<view class='namebox'>
+		<image class='nameicon-left' src='/images/user/car.png'></image>
+		<text class='name'>我的车辆</text>
+		<image class='nameicon' src='/images/righticon.png'></image>
+		<view placeholder-class='textcolor' class='nametext' type='number'>2</view>
+	</view>
+</navigator>
+
+
+	<!-- 状态  
+	<view class='namebox'>
+		<image class='nameicon-left' src='/images/user/status.png'></image>
+		<text class='name'>状态</text>
+		<image class='nameicon' src='/images/righticon.png'></image>
+		<view placeholder-class='textcolor' class='nametext' type='number'>在线</view>
+	</view>
+</view>
+
+
+<navigator class='back' url="/pages/index/index" redirect>返回</navigator>
+-->

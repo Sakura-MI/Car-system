@@ -1,0 +1,35 @@
+	<nav-bar header='{{header}}' title='车辆绑定'></nav-bar>
+	<view class="numberInfo"></view>
+
+  <!--  <view class="container-car"> 
+		
+  	<view class="lineHeight" type="number">车牌号:
+  		<input bindinput="watchNum" class='input' value="{{ carNum }}" placeholder='请输入车牌号'></input>
+  	</view>
+  	<view class="lineHeight" type="text">车名称:
+  		<input class='input' bindinput="watchName" placeholder='请输入车名称'></input>
+  	</view>
+
+  </view>-->
+
+  <view class="container-car">
+		<view class="icon" >电动车品牌:<input type='text' bindinput="watchBrand" value="{{ car_brand }}" style="display: inline-flex;margin-left: 6px; text-align: center;"/> <view class="line1" ></view> </view>
+		<view class="icon" >电动车名字:<input type='text' bindinput="watchName" value="{{ carName }}" style="display: inline-flex;margin-left: 6px; text-align: center;"/> <view class="line1" ></view> </view>
+		<view class="icon" >电动车颜色:<input type='text' bindinput="watchColor" value="{{ car_color }}" style="display: inline-flex;margin-left: 6px;text-align: center;"/> <view class="line1"></view></view>
+		<view class="icon" >车牌号:<input bindinput="watchNum"  value="{{ carNum }}" type='text' style="display:inline-flex;margin-left: 6px;text-align: center;"/><view class="line"></view></view>
+	</view> 
+ <view class="icon"style="margin-left:20px"> 车辆照片:</view>
+  <view class="weui-uploader">
+  	<view class="img-v weui-uploader__bd">
+  		<view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+  			<image class='weui-uploader__img ' src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+  				<icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+  			</image>
+  		</view>
+
+  		<!-- 用来提示用户上传图片 -->
+  		<view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+  	</view>
+  	<button class="upload-img-btn" bindtap="chooseImg" type='default'>拍照 / 上传</button>
+		<view class="bind-btn" bindtap="bind">绑 定</view>
+  </view>

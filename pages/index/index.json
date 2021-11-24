@@ -1,0 +1,8 @@
+
+{
+  "usingComponents": {
+    "searchbar":"/component/searchbar/searchbar",   
+    "chargeCard":"/component/chargeCard/chargeCard",
+    "inCharge":"/component/inCharge/inCharge"
+  }
+}

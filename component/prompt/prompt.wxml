@@ -1,0 +1,11 @@
+<!--component/prompt/prompt.wxml-->
+
+<view class="main" catchtouchmove="catchTouchMove">
+	<view class="main-mask"></view>
+	<view class="main-content">
+		<!-- <view class="content-title">提示</view> -->
+		<view class="content-title">{{txtTips}}</view>  <!--content-text-->
+		<button class="content-title" bindtap="bindConfirm">確定</button> <!--btn-confirm-->
+	</view>
+</view>
+

@@ -1,0 +1,131 @@
+/* component/inCharge/inCharge.wxss */
+/* component/inCharge/inCharge.wxss */
+.charge-main{
+  background-color:#F8F8F8;
+  padding-top: 20rpx;
+  padding : 20rpx;
+  margin-top : 10rpx;
+  border: 2px solid transparent;
+  
+}
+
+/*
+.charge-use{
+  margin-top: 20rpx;
+  color: #663366;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}*/
+
+.charge-content{
+  width: 90%;
+  box-shadow:2px 2px 20px 0px rgb(233, 227, 227);
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+  height: 200rpx;
+}
+
+.where {
+  display: inline-block;
+  margin-top:20px;
+  padding-left: 16px;
+  line-height:50px;
+  font-size: 19px;
+  font-weight: 550;
+  font-family:  Microsoft JhengHei;
+  color:rgb(100, 92, 92);
+  
+}
+.box1{
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+  background-color: #E4F1F9;
+  margin-left: 70px ;
+  line-height:30px; 
+  text-align: center;
+  font-size: 18px;
+  font-weight: 550;
+  font-family:  Microsoft JhengHei;
+  color:#2C9EF4;
+  border-radius: 30px;
+  
+}
+.detail{
+  display: inline-block; 
+  line-height:50px;
+  font-size: 16px;
+  font-weight: 550;
+  font-family:  Microsoft JhengHei;
+  color:#888888;
+  margin-top:-8px;
+  margin-left:244px;
+}
+.btn{
+  height: 14px;
+  width: 14px;
+  display: inline-block; 
+  line-height:50px;
+
+}
+/*充电桩状态*/
+.box{
+  width: 85px;
+  height: 30px;
+  display: inline-block; 
+  background-color: #2C9EF4;
+  line-height:30px; 
+  text-align: center;
+  font-size: 17px;
+  font-weight: 550;
+  font-family:  Microsoft JhengHei;
+  color:#FFFFFF;
+  border-radius: 30px;
+  
+}
+
+
+
+/*
+
+
+.charge-station{
+  justify-content : space-between;
+  padding-top: 50rpx;
+  font-size: large;
+  font-weight: bolder;
+}*/
+
+
+.charge-status{
+  width: 133px;
+  height: 30px;
+  display: inline-block;
+  background-color: #E4F1F9;
+  position: absolute;
+  line-height:30px; 
+  text-align: center;
+  font-size: 17px;
+  font-weight: 550;
+  font-family:  Microsoft JhengHei;
+  z-index: 1;
+  margin-left: 180px ;
+  border-radius: 30px;
+  margin-top: -90px;
+  border: 2px solid transparent;
+  
+}
+
+.item-site{
+  font-weight: bolder;
+  font: bolder;
+  font-size: medium;
+}
+.charge-site{
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: monospace;
+}
+
