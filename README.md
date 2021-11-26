@@ -104,7 +104,7 @@ carSystem/
 
 ## pages / message：好友聊天页面
 
-<img src="https://img-blog.csdnimg.cn/20210601172530128.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTMwNDUwMw==,size_16,color_FFFFFF,t_70" width="47%">
+<img src="https://img-blog.csdnimg.cn/bc5c6bda393c413290799a66fb647e2f.png" width="47%">
 
 
 
