@@ -8,20 +8,10 @@
 
 Golang部分 [Golang](https://github.com/CocaineCong/Car-Manage-System)
 
-Python部分 [Python](https://github.com/CocaineCong/Car-Yolo-FasterRcnn)
+Python部分 [Python](https://github.com/Poootato/SoftwareProject)
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210602073619933.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTMwNDUwMw==,size_16,color_FFFFFF,t_70)
-
-
-# 前言
-
-由于本人真的不会前端，所以这个项目的前端都是`东拼西凑`来的
-
-非常感谢**隔壁有坑**小程序作者的开源，Github地址[隔壁有坑](https://github.com/miniappdeveloper/gbyk)，本程序使用了该小程序的`主页`以及`个人信息页面` 
-
-其他部分都是我自己百度找的模块，或是自己乱写的页面，所以页面之间在美观方面就很会有很大的差距。
-
 
 
 # 项目结构目录
@@ -173,11 +163,6 @@ process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9n
 
 ## 总结
 
-本人下学期准备大三了，打算是往`区块链`或`大数据`方向学习，
-
-前端大概率是不会涉及了，不过下学期的软工实践可能会优化这个前端的逻辑结构。
-
-这个项目的前后端（go+微信小程序）是我今年五一假期写的，写的比较仓促，所以就没什么优化，希望大佬轻喷。
 
 如果你喜欢的话可以在右上角点一个`star`~
 
