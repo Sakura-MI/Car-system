@@ -99,9 +99,7 @@ chat.wxss做了修改
 
 ## pages / index：主页
 
-<img src="(https://img-blog.csdnimg.cn/3fec8fb4770441f5924d7bfcbfed9b5d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_13,color_FFFFFF,t_70,g_se,x_16" width="45%" >
-
-
+![请添加图片描述](https://img-blog.csdnimg.cn/3fec8fb4770441f5924d7bfcbfed9b5d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_13,color_FFFFFF,t_70,g_se,x_16)
 
 
 
