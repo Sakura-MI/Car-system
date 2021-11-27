@@ -33,7 +33,7 @@ Page({
     isShowUserPannel: false, //是否显示个人中心面板
   },
   
-/*##########################################*/
+/*##############################*/
   onLoad: function () {
     
     if(wx.getStorageSync('token') == ""){
